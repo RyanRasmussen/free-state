@@ -85,3 +85,20 @@ if (!defined('ABSPATH')) {
 // AWS keys for offloading media to S3
 define( 'DBI_AWS_ACCESS_KEY_ID', env('DBI_AWS_ACCESS_KEY_ID') );
 define( 'DBI_AWS_SECRET_ACCESS_KEY', env('DBI_AWS_SECRET_ACCESS_KEY') );
+
+define( 'WPOS3_SETTINGS', serialize( array(
+    // S3 bucket to upload files
+    'bucket' => ENV('S3_BUCKET_NAME'),
+    // Automatically copy files to S3 on upload
+    'copy-to-s3' => true,
+    // Rewrite file URLs to S3
+    'serve-from-s3' => true,
+    // Organize S3 files into YYYY/MM directories
+    'use-yearmonth-folders' => true,
+    // Serve files over HTTPS
+    'force-https' => false,
+    // Remove the local file version once offloaded to S3
+    'remove-local-file' => false,
+    // Append a timestamped folder to path of files offloaded to S3
+    'object-versioning' => false,
+) ) );

@@ -1,9 +1,9 @@
 {
-  "name": "roots/bedrock",
+  "name": "annelewis/free-state",
   "type": "project",
   "license": "MIT",
-  "description": "WordPress boilerplate with modern development tools, easier configuration, and an improved folder structure",
-  "homepage": "https://roots.io/bedrock/",
+  "description": "Anne Lewis Strategies WordPress boilerplate. Built on Bedrock. (https://roots.io/bedrock/)",
+  "homepage": "https://github.com/annelewisllc/free-state",
   "authors": [
     {
       "name": "Scott Walkinshaw",
@@ -14,15 +14,16 @@
       "name": "Ben Word",
       "email": "ben@benword.com",
       "homepage": "https://github.com/retlehs"
+    },
+    {
+      "name": "Todd Plants",
+      "email": "todd@annelewisllc.com",
+      "homepage": "https://github.com/tplants"
     }
   ],
   "keywords": [
-    "bedrock", "roots", "wordpress", "stack", "composer", "vagrant", "wp"
+    "annelewis", "wordpress", "wp"
   ],
-  "support": {
-    "issues": "https://github.com/roots/bedrock/issues",
-    "forum": "https://discourse.roots.io/category/bedrock"
-  },
   "config": {
     "preferred-install": "dist"
   },
@@ -55,7 +56,7 @@
   },
   "scripts": {
     "post-root-package-install": [
-      "php -r \"copy('.env.example', '.env');\""
+      "php -r \"copy('.env.example', '.env');\""  
     ],
     "test": [
       "vendor/bin/phpcs"

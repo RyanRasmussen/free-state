@@ -38,14 +38,16 @@
     "vlucas/phpdotenv": "^2.0.1",
     "johnpbloch/wordpress": "4.9.0",
     "oscarotero/env": "^1.1.0",
-    "roots/wp-password-bcrypt": "1.0.0"
+    "roots/wp-password-bcrypt": "1.0.0",
+    "wpackagist-plugin/amazon-web-services": "^1.0",
+    "wpackagist-plugin/amazon-s3-and-cloudfront": "^1.2"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.0.2"
   },
   "extra": {
     "installer-paths": {
-      "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+      "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin", "wpackagist-plugin/amazon-web-services", "wpackagist-plugin/amazon-s3-and-cloudfront"],
       "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
       "web/app/themes/{$name}/": ["type:wordpress-theme"]
     },

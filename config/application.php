@@ -81,3 +81,7 @@ define('DISALLOW_FILE_EDIT', true);
 if (!defined('ABSPATH')) {
     define('ABSPATH', $webroot_dir . '/wp/');
 }
+
+// AWS keys for offloading media to S3
+define( 'DBI_AWS_ACCESS_KEY_ID', env('DBI_AWS_ACCESS_KEY_ID') );
+define( 'DBI_AWS_SECRET_ACCESS_KEY', env('DBI_AWS_SECRET_ACCESS_KEY') );

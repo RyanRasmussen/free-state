@@ -1,0 +1,14 @@
+{
+  "packages": {
+    "annelewis/free-state": {
+      "dev-master": {
+        "name": "annelewis/free-state",
+        "version": "1.0",
+        "dist": {
+          "url": "https://github.com/annelewisllc/free-state/archive/master.zip",
+          "type": "zip"
+        }
+      }    
+    }
+  }
+}

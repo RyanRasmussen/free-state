@@ -69,6 +69,10 @@ This repository is intended to provide a boilerplate configuration for a new Wor
 
 Themes for your Wordpress project live in the `web/app/themes` folder. Drop your base and child themes into that folder and commit them to version control.
 
+### Commit your code to a new private GitHub repository
+
+GitHub has a good guide for adding an existing project to a new repo: https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/
+
 ### Deploy to Elastic Beanstalk.
 
 TKTK

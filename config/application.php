@@ -88,7 +88,7 @@ define( 'DBI_AWS_SECRET_ACCESS_KEY', env('DBI_AWS_SECRET_ACCESS_KEY') );
 
 define( 'WPOS3_SETTINGS', serialize( array(
     // S3 bucket to upload files
-    'bucket' => ENV('S3_BUCKET_NAME'),
+    'bucket' => env('S3_BUCKET_NAME'),
     // Automatically copy files to S3 on upload
     'copy-to-s3' => true,
     // Rewrite file URLs to S3

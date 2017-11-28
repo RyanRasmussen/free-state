@@ -40,21 +40,21 @@ This repository is intended to provide a boilerplate configuration for a new Wor
 
 ```
 {
-    "Statement": [
-        {
-            "Effect": "Allow",
-            "Action": "s3:ListAllMyBuckets",
-            "Resource": "arn:aws:s3:::*"
-        },
-        {
-            "Effect": "Allow",
-            "Action": "s3:*",
-            "Resource": [
-                "arn:aws:s3:::<BUCKET-NAME>",
-                "arn:aws:s3:::<BUCKET-NAME>/*"
-            ]
-        }
-    ]
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": "s3:ListAllMyBuckets",
+      "Resource": "arn:aws:s3:::*"
+    },
+    {
+      "Effect": "Allow",
+      "Action": "s3:*",
+      "Resource": [
+        "arn:aws:s3:::<BUCKET-NAME>",
+        "arn:aws:s3:::<BUCKET-NAME>/*"
+      ]
+    }
+  ]
 }
 ```
 

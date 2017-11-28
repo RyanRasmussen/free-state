@@ -102,3 +102,7 @@ define( 'WPOS3_SETTINGS', serialize( array(
     // Append a timestamped folder to path of files offloaded to S3
     'object-versioning' => false,
 ) ) );
+
+// WP Super Cache
+define('WPCACHEHOME', env('WPCACHEHOME'));
+define('WP_CACHE', true);

@@ -18,3 +18,7 @@ web/.htaccess
 # Composer
 vendor/*
 !vendor/.gitkeep
+
+# WP Super Cache
+web/app/cache/*
+!web/app/cache/.gitkeep

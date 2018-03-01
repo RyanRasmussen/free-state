@@ -86,10 +86,10 @@ Create a new Web Server Environment.
 2. Environment type: Single instance
 3. Upload the zip of your project and name your project
 4. Create an RDS DB Instance
-a. Instance type: t2.small
-b. Health reporting system type: Basic
-c. Root volume type: Magnetic
-d. Root colume size: 5 GB
+    - Instance type: t2.small
+    - Health reporting system type: Basic
+    - Root volume type: Magnetic
+    - Root colume size: 5 GB
 
 Configure your Elastic Beanstalk app
 
@@ -98,15 +98,15 @@ Configure your Elastic Beanstalk app
 3. Fill in your database variables `DB_HOST`,`DB_NAME`,`DB_PASSWORD`,`DB_PORT`,`DB_PREFIX`,`DB_USER`
 4. S3 content integration:  `S3_BUCKET_NAME`,`DBI_AWS_ACCESS_KEY_ID`,`DBI_AWS_SECRET_ACCESS_KEY`
 5. Variables for letsencrypt config:
-a. `BASE_DOMAIN` (no characters, just base domain. Ex: hirono-site-prod.us-east-1.elasticbeanstalk.com) You will update this to the new domain once it launches
-b. `CERTIFICATE_EMAIL` - your email address, or can put todd@annelewisllc.com
+    - `BASE_DOMAIN` (no characters, just base domain. Ex: hirono-site-prod.us-east-1.elasticbeanstalk.com) You will update this to the new domain once it launches
+    - `CERTIFICATE_EMAIL` - your email address, or can put todd@annelewisllc.com
 6. Supercache variables:
-a. `CACHEPATH` - relative path to directory, probably `/var/app/current/web/app/cache/`
-b. `WPCACHEHOME` - relative path to directory, probably  `/var/app/current/web/app/mu-plugins/wp-super-cache/`
-c. `WPCACHE_WPCORE_URL` - `/wp/`
+    - `CACHEPATH` - relative path to directory, probably `/var/app/current/web/app/cache/`
+    - `WPCACHEHOME` - relative path to directory, probably  `/var/app/current/web/app/mu-plugins/wp-super-cache/`
+    - `WPCACHE_WPCORE_URL` - `/wp/`
 6. Wordpress variables
-a. `WP_HOME` - the base URL with characters, Ex: http://hirono-site-prod.us-east-1.elasticbeanstalk.com
-b. `WP_SITEURL` - `WP_HOME` pointing to the /wp directory, Ex: http://hirono-site-prod.us-east-1.elasticbeanstalk.com/wp
-c. `WP_ENV` - Stage of development: `development`, `production`, `staging`
+    - `WP_HOME` - the base URL with characters, Ex: http://hirono-site-prod.us-east-1.elasticbeanstalk.com
+    - `WP_SITEURL` - `WP_HOME` pointing to the /wp directory, Ex: http://hirono-site-prod.us-east-1.elasticbeanstalk.com/wp
+    - `WP_ENV` - Stage of development: `development`, `production`, `staging`
 
 
